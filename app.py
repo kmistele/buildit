@@ -8,7 +8,7 @@ from boto3.dynamodb.conditions import Key
 from dice_roller import DiceRoller
 
 logger = Logger()
-table = boto3.resource('dynamodb').Table(os.environ["DICE_TABLE"])
+table = boto3.resource('dynamodb').Table("DICE_TABLE")
 
 def get_response(event):
     return {
